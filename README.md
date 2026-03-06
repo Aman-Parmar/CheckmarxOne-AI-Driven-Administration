@@ -114,8 +114,8 @@ Ask natural language questions about your Checkmarx One security posture and get
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-username/cxone-ai-agent.git
-cd cxone-ai-agent/files
+git clone https://github.com/Aman-Parmar/CheckmarxOne-AI-Driven-Administration.git
+cd CheckmarxOne-AI-Driven-Administration
 ```
 
 ### 2. Install Ollama and pull a model
@@ -182,7 +182,6 @@ python agent.py --model qwen3:8b
 
 ```bash
 # Make sure Ollama app is running, then:
-cd files
 source .venv/bin/activate
 streamlit run streamlit_app.py
 ```
@@ -208,13 +207,12 @@ What is our fix rate trend over the last 5 snapshots?
 ## Project structure
 
 ```
-files/
+CheckmarxOne-AI-Driven-Administration/
 ├── mcp_server.py        # MCP server — 27 Checkmarx One API tools
 ├── streamlit_app.py     # Browser UI
 ├── agent.py             # Terminal chat agent
 ├── .env.example         # Credentials template
-├── .env                 # Your credentials (git-ignored)
-└── report_history.json  # Auto-generated trend history
+├── .env                 # Your credentials
 ```
 
 ---
